@@ -8,7 +8,7 @@ public class OccurancyOfCharacters {
 	public static void main(String[] args) {
 
 		// question asked in interview
-
+// edited online
 		
 		String str="aaaabbbccccceeeeee";
 		
