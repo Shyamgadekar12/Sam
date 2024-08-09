@@ -9,13 +9,72 @@ public class OccurancyOfCharacters {
 
 		// question asked in interview
 
-		String str="aaaabbbccccceeeeee"; // desired o/p--> a4b3c5e6
+		
+		String str="aaaabbbccccceeeeee";
+		
+		 Map<Character,Integer> hs= new HashMap();
+		 
+		 char[] a= str.toCharArray();
+		 
+		 
+		
+		 for(int i=0;i<a.length;i++)
+		 {
+			 int count=0;
+			 
+			 for(int j=0;j<a.length;j++)
+				 {
+				     if(a[i]==a[j])
+				     {
+				    	 count++;
+				     }
+				     
+				 }
+			 hs.put(a[i], count);
+		 }
+		 
+		
+		 for (Map.Entry<Character, Integer> entry : hs.entrySet()) 
+			{
+				System.out.print(entry.getKey() + "" + entry.getValue());
+			}
+		
+		
+		
+		
+		
+		
+/*		String str="aaaabbbccccceeeeee";
+		 Map<Character,Integer> hs= new HashMap();
+		 
+		 for(Character c: str.toCharArray())
+			 {
+			     
+			     if(hs.containsKey(c))
+			     {
+			    	 hs.put(c, hs.get(c)+1);
+			     }
+			     else {
+			    	 
+			    	 
+			    	 hs.put(c, 1);
+			     }
+			 
+			 }
+			 System.out.println(hs);
+*/		 
+		
+
+	
+		
+/*      // form chat GPT
+ 
+      String str="aaaabbbccccceeeeee"; // desired o/p--> a4b3c5e6
 
 		char[] ch=str.toCharArray();
+		
 
-		Map<Character,Integer> hs= new HashMap();
-
-
+	  Map<Character,Integer> hs= new HashMap();
 		for(char ech:ch)
 		{
 
@@ -35,6 +94,15 @@ public class OccurancyOfCharacters {
 		{
 			System.out.print(entry.getKey() + "" + entry.getValue());
 		}
+		
+			System.out.println(hs);
+		
+*/
+		
+		
+		
+	
+		
 
 	}
 }
