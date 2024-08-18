@@ -5,7 +5,7 @@ public class PalendromeNumber {
 	public static void main(String[] args) {
 		// palendrome number 34543 ; 12321;
 
-		int num=123321;
+		int num=12321;
 
 		int org=num;
 		int rev=0;

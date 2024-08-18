@@ -3,9 +3,12 @@ package shyam;
 public class LargestBetweenThreeNumber {
 
 	public static void main(String[] args) {
-		int a=10;
-		int b=30;
-		int c=50;
+		int a=100;
+		int b=3000;
+		int c=500;
+		
+		// Approach 2 using & operator
+/*		
 
 		if(a>b && a>c)
 		{
@@ -22,5 +25,19 @@ public class LargestBetweenThreeNumber {
 				System.out.println("c is largest number : " +c );
 			}
 		}
+*/		
+		
+		// Approach 2 using Ternary operator 
+		
+//a>b?a:b ---> here if a is grater then num will store in a, if b then store in b
+		
+	
+	int largest= a>b?a:b;
+	
+	largest= c>largest?c:largest;
+	
+	System.out.println(largest);
+		
+		
 	}
 }

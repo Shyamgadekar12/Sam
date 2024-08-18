@@ -14,7 +14,7 @@ public class CountNumberOfDigitsInNumber {
 			count++;
 		}
 
-		System.out.println(count);
+		System.out.println("number having digits :"+count);
 
 	}
 
