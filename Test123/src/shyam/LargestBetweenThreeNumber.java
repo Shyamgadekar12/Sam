@@ -31,12 +31,18 @@ public class LargestBetweenThreeNumber {
 		
 //a>b?a:b ---> here if a is grater then num will store in a, if b then store in b
 		
-	
+	/*
 	int largest= a>b?a:b;
 	
 	largest= c>largest?c:largest;
 	
 	System.out.println(largest);
+	*/
+		
+		//Approach 3 using if else condition
+	
+	
+	
 		
 		
 	}
