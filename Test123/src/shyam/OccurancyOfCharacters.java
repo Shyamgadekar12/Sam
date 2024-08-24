@@ -17,7 +17,7 @@ public class OccurancyOfCharacters {
 		 
 		 char[] a= str.toCharArray();
 		 
-		 
+		
 		
 		 for(int i=0;i<a.length;i++)
 		 {
@@ -100,7 +100,41 @@ public class OccurancyOfCharacters {
 		
 */
 		
+/*
+ String str= "abbcccddddeeeee";
+
+		char[] ch= str.toCharArray();
+		Map<Character,Integer> hs= new HashMap<>();
+		int count=1;
+
+
+		for(Character c:ch)
+		{
+
+			if(hs.containsKey(c))
+			{
+
+				count++;
+				hs.put(c,count);
+			}
+			else
+			{ 
+				count=1;
+				hs.put(c,1);
+				
+			}
+
+
+		}
+
+		System.out.println(hs);
 		
+		
+			for(Map.Entry<Character,Integer> ent: hs.entrySet())
+			{
+			System.out.println(ent.getKey()+":"+ent.getValue());
+			} 		
+ */
 		
 	
 		
