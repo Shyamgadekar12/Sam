@@ -17,6 +17,7 @@ public class ReverseNumber {
 			
 			int rem=num%10;
 			rev=rev*10+rem; // 0+3=3... 30+2=32 ....320+1=321
+			
 			num=num/10; // 12...1
 		}
 	*/	
